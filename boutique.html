@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La boutique – Made by JD</title>
+<meta name="description" content="Toutes les céramiques et bougies faites main : tasses, bols, assiettes. Filtrez par type d'objet ou par couleur.">
+<meta property="og:title" content="La boutique – Made by JD">
+<meta property="og:description" content="Toutes les céramiques et bougies faites main : tasses, bols, assiettes. Filtrez par type d'objet ou par couleur.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta name="theme-color" content="#F6F1E9">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Jost:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="announce">Faites main en Belgique · Livraison offerte dès 60 €</div>
+<div class="wrap">
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Made by JD, accueil">
+<svg class="brand-mark" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="none" stroke="currentColor" stroke-width="1.6"/><g fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18.5 14V27A5 5 0 0 1 8.5 27"/><path d="M24.5 14H28.5A9 9 0 0 1 28.5 32H24.5Z"/></g></svg>
+<span class="brand-text"><span class="brand-name">Made by JD</span><span class="brand-tag">Céramiques &amp; bougies</span></span>
+</a>
+<nav class="main-nav" aria-label="Navigation principale">
+<a href="boutique.html" aria-current="page">Boutique</a>
+<a href="boutique.html#couleurs">Par couleur</a>
+<a href="boutique.html?cat=bougies">Bougies</a>
+<a href="index.html#atelier">L'atelier</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+<button class="cart-btn" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg> Panier (0)</button>
+</header>
+</div>
+
+<main id="contenu">
+<div class="wrap">
+<div class="page-head">
+<h1 class="h-display h1" style="font-size:clamp(42px,6vw,60px)">La boutique</h1>
+<p>Pièces uniques et petites séries, faites main. Choisissez par type d'objet ou par couleur.</p>
+</div>
+
+<section class="filters" aria-label="Filtres">
+<div>
+<p class="filter-label" id="lbl-cat">Type d'objet</p>
+<div class="filter-row" role="group" aria-labelledby="lbl-cat">
+<button class="pill" type="button" data-filter-cat="tout" aria-pressed="true">Tout</button>
+<button class="pill" type="button" data-filter-cat="tasses" aria-pressed="false">Tasses</button>
+<button class="pill" type="button" data-filter-cat="bols" aria-pressed="false">Bols</button>
+<button class="pill" type="button" data-filter-cat="assiettes" aria-pressed="false">Assiettes</button>
+<button class="pill" type="button" data-filter-cat="bougies" aria-pressed="false">Bougies</button>
+</div>
+</div>
+<div id="couleurs">
+<p class="filter-label" id="lbl-col">Couleur</p>
+<div class="swatches" role="group" aria-labelledby="lbl-col">
+<button class="swatch" type="button" data-filter-couleur="vert-lagon" aria-pressed="false"><span class="dot" style="--c:#6C9A8E"></span><span class="name">Vert lagon</span></button>
+<button class="swatch" type="button" data-filter-couleur="bleu-nuit" aria-pressed="false"><span class="dot" style="--c:#1F3A4D"></span><span class="name">Bleu nuit</span></button>
+<button class="swatch" type="button" data-filter-couleur="vert-olive" aria-pressed="false"><span class="dot" style="--c:#A7A872"></span><span class="name">Vert olive</span></button>
+<button class="swatch" type="button" data-filter-couleur="orange" aria-pressed="false"><span class="dot" style="--c:#E0702F"></span><span class="name">Orange</span></button>
+<button class="swatch" type="button" data-filter-couleur="rouge" aria-pressed="false"><span class="dot" style="--c:#C2452D"></span><span class="name">Rouge</span></button>
+<button class="swatch" type="button" data-filter-couleur="jaune" aria-pressed="false"><span class="dot" style="--c:#E0A83A"></span><span class="name">Jaune</span></button>
+<button class="swatch" type="button" data-filter-couleur="rose" aria-pressed="false"><span class="dot" style="--c:#E2A89C"></span><span class="name">Rose</span></button>
+<button class="swatch" type="button" data-filter-couleur="brun" aria-pressed="false"><span class="dot" style="--c:#6B4A3A"></span><span class="name">Brun</span></button>
+<button class="swatch" type="button" data-filter-couleur="anthracite" aria-pressed="false"><span class="dot" style="--c:#2D2A29"></span><span class="name">Anthracite</span></button>
+<button class="swatch" type="button" data-filter-couleur="blanc-ecru" aria-pressed="false"><span class="dot" style="--c:#EFE8DC"></span><span class="name">Blanc écru</span></button>
+</div>
+</div>
+</section>
+
+<div class="results">
+<p id="count" role="status" aria-live="polite">8 pièces</p>
+<button class="link-reset" type="button" id="reset" hidden>Effacer les filtres</button>
+</div>
+
+<div class="grid" id="produits">
+<article class="card" data-cat="tasses" data-couleur="vert-lagon">
+<a class="card-media" href="produit.html"><img src="img/p-tasse-lagon.jpg" alt="Tasse en céramique vert et bleu, striée" loading="lazy"><span class="badge">Pièce unique</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Tasse Lagon</a><span class="price">28 €</span></div>
+<p class="card-meta">Tasse · Vert lagon</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="bols" data-couleur="bleu-nuit">
+<a class="card-media" href="produit.html"><img src="img/p-bol-bleu.jpg" alt="Bol bleu foncé à l'extérieur blanc" loading="lazy"><span class="badge">Pièce unique</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Bol Bleu nuit</a><span class="price">36 €</span></div>
+<p class="card-meta">Bol · Bleu nuit et blanc</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="bols" data-couleur="rouge">
+<a class="card-media" href="produit.html"><img src="img/p-bol-tomate.jpg" alt="Bol blanc à bord rouge" loading="lazy"><span class="badge">Pièce unique</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Bol Tomate</a><span class="price">30 €</span></div>
+<p class="card-meta">Bol · Blanc et rouge</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="assiettes" data-couleur="vert-lagon">
+<a class="card-media" href="produit.html"><img src="img/p-assiette-emeraude.jpg" alt="Assiette creuse blanche à l'extérieur vert émeraude" loading="lazy"><span class="badge">Pièce unique</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Assiette creuse Émeraude</a><span class="price">42 €</span></div>
+<p class="card-meta">Assiette · Vert et blanc</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="tasses" data-couleur="jaune">
+<a class="card-media" href="produit.html"><img src="img/p-tasse-mimosa.jpg" alt="Tasse jaune à l'intérieur orange" loading="lazy"><span class="badge">Pièce unique</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Tasse Mimosa</a><span class="price">26 €</span></div>
+<p class="card-meta">Tasse · Jaune et orange</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="bols" data-couleur="anthracite">
+<a class="card-media" href="produit.html"><img src="img/p-coupelle-noire.jpg" alt="Coupelle noire à l'émail brillant" loading="lazy"><span class="badge">Pièce unique</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Coupelle Nuit</a><span class="price">24 €</span></div>
+<p class="card-meta">Coupelle · Noir brillant</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="bougies" data-couleur="bleu-nuit">
+<a class="card-media" href="produit.html"><img src="img/p-bougie.jpg" alt="Bougie coulée dans un bol en céramique bleu" loading="lazy"><span class="badge">Bougie</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Bougie en bol bleu</a><span class="price">[Prix]</span></div>
+<p class="card-meta">Bougie · bol en céramique</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+<article class="card" data-cat="tasses" data-couleur="brun">
+<a class="card-media" href="produit.html"><img src="img/p-lot-tasses.jpg" alt="Tasses en grès aux émaux naturels" loading="lazy"><span class="badge">Lot de 2</span></a>
+<div class="card-row"><a class="card-title" href="produit.html">Lot de tasses grès</a><span class="price">48 €</span></div>
+<p class="card-meta">Tasse · Teintes naturelles · lot de 2</p>
+<button class="btn btn-outline btn-sm" type="button">Ajouter au panier</button>
+</article>
+</div>
+<p class="empty" id="vide" hidden>Aucune pièce ne correspond à ce choix pour le moment. Les pièces uniques partent vite : inscrivez-vous à la newsletter pour la prochaine fournée.</p>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-cols">
+<div>
+<div class="footer-brand">Made by JD</div>
+<p>Céramiques et bougies faites main à la maison, en Belgique.</p>
+</div>
+<div>
+<p class="footer-title">Boutique</p>
+<div class="footer-links">
+<a href="boutique.html?cat=tasses">Tasses</a>
+<a href="boutique.html?cat=bols">Bols</a>
+<a href="boutique.html?cat=assiettes">Assiettes</a>
+<a href="boutique.html?cat=bougies">Bougies</a>
+<a href="boutique.html#couleurs">Par couleur</a>
+</div>
+</div>
+<div>
+<p class="footer-title">Infos pratiques</p>
+<div class="footer-links">
+<a href="infos.html#livraison">Livraison et retours</a>
+<a href="infos.html#entretien">Entretien des céramiques</a>
+<a href="infos.html#cgv">Conditions générales de vente</a>
+<a href="infos.html#mentions">Mentions légales</a>
+<a href="infos.html#confidentialite">Politique de confidentialité</a>
+</div>
+</div>
+<div>
+<p class="footer-title">Paiement sécurisé</p>
+<p>Bancontact · Visa · Mastercard · Apple Pay · PayPal</p>
+</div>
+</div>
+<div class="footer-legal">© 2026 JD Capital SRL · BE0829201035 · Prix en euros, TVA incluse</div>
+</div>
+</footer>
+<script src="js/site.js" defer></script>
+<script src="js/boutique.js" defer></script>
+</body>
+</html>
